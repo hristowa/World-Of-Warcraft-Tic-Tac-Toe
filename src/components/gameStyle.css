@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+html {
+    background-image: url('./img/green-background.jpg');
+    min-height: 100%;
+}
+
+.wow-logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-width: 100%;
+    height: 120px;
+
+}
+
+/*BOARD AND SQUARES*/
+.board-row {
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    background-image: url('./img/btn-background.jpg');
+    margin: 0 auto;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: rgba(207, 150, 36, 0.664);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 2px outset #644f106c;
+}
+
+.square:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/*BOARD AND SQUARES END*/
+.imgTicTacToe {
+    width: 100%;
+    height: 100%;
+}
+
+.status {
+    color: rgb(41, 2, 2);
+    font-size: 28px;
+    font-family: 'Cinzel Decorative';
+    font-weight: 700;
+    margin: 15px;
+
+    text-shadow: 0 13.36px 8.896px #141414be, 0 -2px 1px #5755559d;
+}
+
+/*'PLAY AGAIN' BUTTON*/
+.restart {
+    font-family: 'Cinzel Decorative';
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(41, 2, 2);
+    width: 140px;
+    height: 50px;
+    background-color: rgba(218, 175, 102, 0.678);
+    cursor: pointer;
+    margin: 15px;
+    border: 2px solid rgb(41, 2, 2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.restart:hover {
+    color: rgb(2, 2, 53);
+    border: 2px solid rgb(2, 2, 53);
+    background-color: rgba(168, 135, 78, 0.678);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/*'PLAY AGAIN' BUTTON END*/
+
+.orc-wow-img {
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*MEDIA STYLE -  RESPONSIVE*/
+@media screen and (max-width: 1032px) {
+    .wow-logo {
+        height: 60px;
+    }
+
+    .status {
+        font-size: 18px;
+    }
+
+    .square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .restart {
+        height: 35px;
+    }
+
+    .orc-wow-img {
+        height: 200px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}
